@@ -1,0 +1,116 @@
+{
+  // Language and Spelling (Australian English)
+  "cSpell.language": "en-AU",
+
+  // Terminal Configuration
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+
+  // Python Configuration
+  // Microsoft Fabric Runtime 1.3 uses Python 3.11
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.languageServer": "Pylance",
+  // Suppress Pylance diagnostics for Microsoft Fabric notebooks
+  // Fabric provides runtime-injected globals and imports not available during static analysis
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportGeneralTypeIssues": "none",
+    "reportUnboundVariable": "none",
+    "reportUndefinedVariable": "none",
+    "reportAttributeAccessIssue": "none",
+    "reportArgumentType": "none",
+    "reportReturnType": "none",
+    "reportOptionalMemberAccess": "none",
+    "reportOptionalSubscript": "none",
+    "reportOptionalCall": "none",
+    "reportMissingImports": "none",
+    "reportCallIssue": "none",
+    "reportOperatorIssue": "none",
+    "reportUnusedExpression": "none"
+  },
+
+  // Ruff (Python Linting and Formatting)
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "ruff.enable": true,
+  "ruff.organizeImports": true,
+
+  // Jupyter Configuration
+  "jupyter.askForKernelRestart": false,
+  "jupyter.interactiveWindow.creationMode": "perFile",
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+
+  // PowerShell Configuration
+  "[powershell]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "powershell.codeFormatting.preset": "OTBS",
+  "powershell.codeFormatting.autoCorrectAliases": true,
+  "powershell.scriptAnalysis.enable": true,
+
+  // File Associations (Fabric file types)
+  "files.associations": {
+    "*.ps1": "powershell",
+    "*.psm1": "powershell",
+    "*.psd1": "powershell",
+    "*.sql": "sql",
+    "*.kql": "kusto",
+    "*.pq": "powerquery",
+    "*.tmdl": "tmdl"
+  },
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+
+  // Editor Configuration
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.rulers": [88, 120],
+  "editor.wordWrap": "off",
+
+  // Git Configuration
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.fetchOnPull": true,
+
+  // Search Configuration
+  "search.exclude": {
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "**/.ruff_cache": true,
+    "**/.ipynb_checkpoints": true,
+    "**/output": true
+  },
+
+  // JSON Formatting
+  "[json]": {
+    "files.insertFinalNewline": false
+  },
+
+  // Markdown Configuration
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    },
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  }
+}
