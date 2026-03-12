@@ -1,0 +1,33 @@
+name: Task
+description: A general task or work item
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Track a specific piece of work.
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: What needs to be done?
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Additional context, acceptance criteria, or implementation notes
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
