@@ -1,6 +1,7 @@
 # Contributing
 
-These are private repositories for Australian Food and Fibre's internal data platform. Contributions are limited to authorised team members and partners.
+These are private repositories for Australian Food and Fibre's internal data platform.
+Contributions are limited to authorised team members and partners.
 
 ## Getting Started
 
@@ -17,12 +18,12 @@ These are private repositories for Australian Food and Fibre's internal data pla
 
 ### File Naming
 
-| Type | Convention | Example |
-|------|------------|---------|
-| Markdown | kebab-case | `azure-setup.md` |
-| PowerShell | Verb-Noun PascalCase | `Get-AFFWorkspaces.ps1` |
-| Python | snake_case | `detect_ica_deltas.py` |
-| SQL | kebab-case or numbered | `00-deploy-full-elt-schema.sql` |
+| Type       | Convention             | Example                        |
+|------------|------------------------|--------------------------------|
+| Markdown   | kebab-case             | `azure-setup.md`               |
+| PowerShell | Verb-Noun PascalCase   | `Get-AFFWorkspaces.ps1`        |
+| Python     | snake_case             | `detect_ica_deltas.py`         |
+| SQL        | kebab-case or numbered | `00-deploy-full-elt-schema.sql` |
 
 ### Code Style
 
@@ -51,4 +52,6 @@ Changes to Fabric workspace items follow a specific workflow:
 3. Open a PR for review
 4. After merge, sync to UAT/Prod via deployment pipelines
 
-See [CLAUDE.md](https://github.com/Australian-Food-and-Fibre/data-platform/blob/main/CLAUDE.md#git-integration-workflow) for detailed sync commands.
+See the data-platform
+[CLAUDE.md](https://github.com/Australian-Food-and-Fibre/data-platform/blob/main/CLAUDE.md#git-integration-workflow)
+for detailed sync commands.

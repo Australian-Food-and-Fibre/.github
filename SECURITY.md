@@ -8,7 +8,8 @@ If you discover a security vulnerability in any Australian Food and Fibre reposi
 
 ### How to Report
 
-1. Email **bwalsh@australianfoodandfibre.com.au** with details of the vulnerability
+1. Use [GitHub Security Advisories](https://docs.github.com/en/code-security/security-advisories)
+   to privately report the vulnerability in the affected repository
 2. Include steps to reproduce, affected components, and potential impact
 3. Allow reasonable time for a response before any public disclosure
 

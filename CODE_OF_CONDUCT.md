@@ -15,4 +15,4 @@ This applies to all Australian Food and Fibre repositories and related communica
 
 ## Reporting
 
-Concerns can be raised with the repository owner at **bwalsh@australianfoodandfibre.com.au**.
+Concerns can be raised with the organisation owners via GitHub.
